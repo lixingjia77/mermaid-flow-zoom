@@ -17,7 +17,6 @@
 
 .mfz-container.is-focused {
   border-color: var(--interactive-accent);
-  box-shadow: 0 0 0 1px var(--interactive-accent);
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 60%, transparent);
 }
 
@@ -25,8 +24,8 @@
   position: fixed;
   inset: 0;
   z-index: 1000;
-  width: 100vw !important;
-  height: 100vh !important;
+  width: 100vw;
+  height: 100vh;
   max-height: none;
   margin: 0;
   border-radius: 0;
@@ -61,7 +60,7 @@ body.mfz-fullscreen-open {
 
 .mfz-content svg {
   display: block;
-  max-width: none !important;
+  max-width: none;
   height: auto;
   overflow: visible;
 }
@@ -76,7 +75,6 @@ body.mfz-fullscreen-open {
   padding: 4px;
   border: 1px solid var(--background-modifier-border);
   border-radius: 8px;
-  background: var(--background-primary);
   background: color-mix(in srgb, var(--background-primary) 92%, transparent);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   opacity: 0.92;
@@ -103,7 +101,6 @@ body.mfz-fullscreen-open {
   max-width: calc(100% - 16px);
   padding: 3px 7px;
   border-radius: 6px;
-  background: var(--background-primary);
   background: color-mix(in srgb, var(--background-primary) 88%, transparent);
   color: var(--text-muted);
   font-size: 11px;
